@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .invoice-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .invoice-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .invoice-header h1 {
+            color: #333;
+        }
+
+        .invoice-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .invoice-details div {
+            width: 48%;
+        }
+
+        .invoice-items {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .invoice-total {
+            text-align: right;
+        }
+
+        .invoice-footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .footer-text {
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invoice-container">
+        <div class="invoice-header">
+            <h1>Invoice</h1>
+        </div>
+
+        <div class="invoice-details">
+            <div>
+                <p>From:</p>
+                <address>
+                    Your Company Name<br>
+                    Address Line 1<br>
+                    Address Line 2<br>
+                    City, Country<br>
+                    Email: your@email.com
+                </address>
+            </div>
+            <div>
+                <p>To:</p>
+                <address>
+                    Client Name<br>
+                    Client Address Line 1<br>
+                    Client Address Line 2<br>
+                    City, Country<br>
+                    Email: client@email.com
+                </address>
+            </div>
+        </div>
+
+        <div class="invoice-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>2</td>
+                        <td>$50.00</td>
+                        <td>$100.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 2</td>
+                        <td>3</td>
+                        <td>$30.00</td>
+                        <td>$90.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="invoice-total">
+            <p>Total: $190.00</p>
+        </div>
+
+        <div class="invoice-footer">
+            <p class="footer-text">Thank you for your business!</p>
+        </div>
+    </div>
+
+</body>
+</html>
